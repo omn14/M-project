@@ -1,0 +1,23 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Degago et~al.}{2011}]{Deg2011Geo}
+Degago, S., Grimstad, G., Jostad, H., Nordal, S., and Olsson, M. (2011).
+\newblock Use and misuse of the isotache concept with respect to creep
+  hypotheses a and b.
+\newblock {\em Géotechnique}, 61(10):897--908.
+
+\bibitem[\protect\astroncite{Emdal et~al.}{2007}]{Emd2007}
+Emdal, A., Priol, G., Grimstad, G., and Løhren, A. (2007).
+\newblock Numerical analysis of the effect of sleepers on the lateral
+  displacement of railway track.
+\newblock In {\em Numerical Models in Geomechanics}. Taylor \& Francis.
+\newblock doi:10.1201/NOE0415440271.ch75.
+
+\bibitem[\protect\astroncite{Grimstad and Degago}{2010}]{gri2010NUM}
+Grimstad, G. and Degago, S. (2010).
+\newblock A non-associated creep model for structured anisotropic clay (n-sac).
+\newblock In {\em Numerical Methods in Geotechnical Engineering}, pages 3--8.
+  CRC Press.
+\newblock doi:10.1201/b10551-3.
+
+\end{thebibliography}

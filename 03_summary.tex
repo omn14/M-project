@@ -1,0 +1,20 @@
+%This is the Summary
+%%=========================================
+\addcontentsline{toc}{section}{Summary and Conclusions}
+\section*{Summary and Conclusions}
+Soil is a complex medium. 
+Its inhomogenous nature means that the physical parameters of soil vary spatialy both vertically and lateraly. 
+Traditionally soil properties is modeled with a representative value, usually some kind of mean value or simmilar. 
+In probabilistic methods, this variability, or uncertainty is taken into account by treating the soil as a random variable sampled from a probability distribution. 
+By using random field theory and statistics one can try to describe how the soil parameters are distributed in space and how they vary with distance.
+In a slope stability problem, the spatial distribution of the soil strength governing parameters has a direct impact on the development of the failure surface, the falure mechanism and therfore the over all stability of the slope.
+To simulate stability a finite element program can be used with the soil model parameters input to the finite element mesh based on statistical spatial correlated random fields.
+To simulate variability and uncertainty, the modeling is repeated many times with different random fields.
+This is the random finite element method.
+
+
+Current modern soil modeling software do not support random finite element method, and published reasearch random finite element software code do not have the advanced functionality as modern comercial geotechnical software. 
+How ever, since the random finite element method does not change the way the problem is simulated, only the input parameters change, modern software packages can be used if a way to specify the input and the simulation run parameters can be controlled in an efficient manner.
+Plaxis, a modern software package devolped by Bently, has capabilities like this through its application program interface and python scripting. 
+
+In this project work I present a method to run the random finite element method in Plaxis geothechnical software package using python API scripting interface, and demonstrate the random finite element method on a slope stability problem.

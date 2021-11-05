@@ -1,0 +1,38 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Degago et~al.(2011)Degago, Grimstad, Jostad, Nordal, and
+  Olsson]{Deg2011Geo}
+S.~Degago, G.~Grimstad, H.~Jostad, S.~Nordal, and M.~Olsson.
+\newblock Use and misuse of the isotache concept with respect to creep
+  hypotheses a and b.
+\newblock \emph{Géotechnique}, 61\penalty0 (10):\penalty0 897--908, 2011.
+\newblock ISSN 0016-8505.
+\newblock \doi{Doi 10.1680/Geot.9.P.112}.
+\newblock URL \url{<Go to ISI>://000295208700007}.
+
+\bibitem[Emdal et~al.(2007)Emdal, Priol, Grimstad, and Løhren]{Emd2007}
+A.~Emdal, G.~Priol, G.~Grimstad, and A.~Løhren.
+\newblock Numerical analysis of the effect of sleepers on the lateral
+  displacement of railway track.
+\newblock In \emph{Numerical Models in Geomechanics}. Taylor \& Francis, 2007.
+\newblock ISBN 978-0-415-44027-1.
+\newblock \doi{doi:10.1201/NOE0415440271.ch75 10.1201/NOE0415440271.ch75}.
+\newblock URL \url{http://dx.doi.org/10.1201/NOE0415440271.ch75}.
+\newblock doi:10.1201/NOE0415440271.ch75.
+
+\bibitem[Grimstad and Degago(2010)]{gri2010NUM}
+G.~Grimstad and S.~Degago.
+\newblock A non-associated creep model for structured anisotropic clay (n-sac).
+\newblock In \emph{Numerical Methods in Geotechnical Engineering}, pages 3--8.
+  CRC Press, 2010.
+\newblock ISBN 978-0-415-59239-0.
+\newblock \doi{doi:10.1201/b10551-3 10.1201/b10551-3}.
+\newblock URL \url{http://dx.doi.org/10.1201/b10551-3}.
+\newblock doi:10.1201/b10551-3.
+
+\end{thebibliography}

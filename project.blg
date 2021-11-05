@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: project.aux
+A level-1 auxiliary file: front.aux
+A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: acknowledgment.aux
+A level-1 auxiliary file: summary.aux
+A level-1 auxiliary file: chapter01.aux
+A level-1 auxiliary file: chapter02.aux
+A level-1 auxiliary file: chapter0n.aux
+A level-1 auxiliary file: acronyms.aux
+A level-1 auxiliary file: appendix-b.aux
+The style file: abbrvnat.bst
+Database file #1: GG_EndNote_Library.bib
+You've used 3 entries,
+            2773 wiz_defined-function locations,
+            638 strings with 5626 characters,
+and the built_in function-call counts, 1777 in all, are:
+= -- 170
+> -- 108
+< -- 2
++ -- 36
+- -- 33
+* -- 149
+:= -- 284
+add.period$ -- 22
+call.type$ -- 3
+change.case$ -- 20
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 73
+empty$ -- 130
+format.name$ -- 38
+if$ -- 380
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 34
+num.names$ -- 12
+pop$ -- 32
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 55
+stack$ -- 0
+substring$ -- 39
+swap$ -- 10
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 33
+warning$ -- 0
+while$ -- 12
+width$ -- 0
+write$ -- 69

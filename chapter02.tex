@@ -1,0 +1,78 @@
+%This is chapter 2
+%%=========================================
+\chapter[Equations, etc]{Equations, Figures, and Tables}
+The content of this chapter will vary with the topic of your thesis. 
+
+%%=========================================
+\section{Simple Equations}
+This is how a simple equation is included:
+\begin{equation}
+F(t)=\int_0^t \exp(-\lambda x)\,dx
+\label{eq1}
+\end{equation}
+
+The equations are automatically given equation numbers -- here (\ref{eq1}) since this is the first equation in Chapter 2. Note that you can refer to the equation by referring to the ``label'' you specified as part of the equation environment.
+
+
+%%=========================================
+\section{Including Figures}
+\begin{figure}
+\centering
+\includegraphics[scale=1.0]{fig/NTNU}
+\caption{This is the logo of NTNU.}
+\label{fig1}
+\end{figure}
+
+Each figure should include a unique caption \emph{label} as for Figure~\ref{fig1}. 
+
+
+%%=========================================
+\section{Including Tables}
+Please see Table Figure~\ref{tab1} for an example of a table. 
+
+\begin{table}
+	\centering\small
+	\caption{The degree of newness of technology.}
+	\label{tab1}
+		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccc}
+			\toprule
+			  &\multicolumn{3}{c}{Level of technology maturity}\\
+  \cmidrule{2-4}
+			Experience with the		   &  & Limited field history or not & New or \\
+              operating  condition  & Proven &  used by company/user & unproven \\
+        
+			\midrule
+			  Previous experience & 1 & 2 & 3 \\
+		          No experience by company/user & 2 & 3 & 4 \\
+		          No industry experience & 3 & 4 & 4 \\
+			\bottomrule
+		\end{tabular*}
+\end{table}
+
+\begin{remark}
+Notice that figure captions (Figure text) shall be located \emph{below} the figure -- and that the caption of tables shall be \emph{above} the table
+\end{remark}
+%%=========================================
+\section{Copying Figures and Tables}
+In some cases, it may be relevant to include figures and tables from from other publications in your report. This can be a direct copy or that you retype the table or redraw the figure. In both cases, you should include a reference to the source in the figure or table caption. The caption might then be written as: \textsl{Figure/Table xx: The caption text is coming here \citep{Emd2007}.}
+
+In other cases, you get the idea from a figure or table in a publication, but modify the figure/table to fit your purpose. If the change is significant, your caption should have the following format: \textsl{Figure/Table xx: The caption text is coming here \citep[adapted from][]{Emd2007}.}
+
+%%=========================================
+\section{References to Figures and Tables}
+Remember that all figures and tables shall be referred to and explained/discussed in the text. If a figure/table is not referred to in the text, it shall be deleted from the report.
+
+%%=========================================
+\section{Plagiarism}
+Plagiarism is defined as ``use, without giving reasonable and appropriate credit to or acknowledging the author or source, of another person's original work, whether such work is made up of code, formulas, ideas, language, research, strategies, writing or other form'', and is a very serious issue in all academic work. You should adhere to the following rules:
+\begin{itemize}
+\item Give proper references to all the sources you are using as a basis for your work. The references should be give to the original work and not to newer sources that mention the original sources.
+\item You may copy paragraphs up to 50 words when you include a proper reference. In doing so, you should place the copied text in inverted commas (i.e., ``Copied text follows \ldots''). Another option is to write the copied text as a quotation, for example:
+\begin{quote}
+Two totally different cases, referred to as creep hypotheses $A$ and $B$, have been used as a basis of discussion to assess the effect of creep during the primary consolidation phase.
+\newline \mbox{} \hfill \citet{Deg2011Geo}
+\end{quote}
+\end{itemize}
+
+
+
