@@ -30,61 +30,45 @@ You should define your problem in a clear an unambiguous way and explain why thi
 \subsection*{Literature Survey}
 The random finite element method (RFEM) has been in use since the mid-1990s \citep*[e.g, see][]{griffiths1993seepage}. RFEM combines random field theory to represent the spatialy varying soil with finite element method (FEM) for deformation analysis. Stochastic analysis in FEM methods can be built into the finite element equations themselvs \citep*[e.g., see][]{vanmarcke1983stochastic}, 
 or a Monte Carlo approach can be used were multiple realizations of different spatial soil models can be analyzed together. The Monte Carlo approach can be computationaly demanding, but is very flexible by utilizing arbitrary FEM code changing just the input. The Monte Carlo RFEM and its application to many geotechnical problems including seepage, bearing capacity, earth pressure and settlement is described in more detail in book by \citet*{fenton2008risk}.
-Example of RFEM analysis for slope stability is presented by \citep*[see][Chapter 13]{fenton2008risk} based on FEM code developed by \citep{smith2013programming}. The RFEM code is publicly available and extensive research has been conducted using it. A list of all but the most recent publications using the code is available here: (\url{http://random.engmath.dal.ca/rfem/rfem_pubs.html}). 
+Example of RFEM analysis for slope stability is presented by \citep*[see][Chapter 13]{fenton2008risk} based on FEM code developed by \citet*{smith2013programming}. The RFEM code is publicly available and extensive research has been conducted using it. A list of all but the most recent publications using the code is available here: (\url{http://random.engmath.dal.ca/rfem/rfem_pubs.html}). 
 The RFEM code is for two-dimensional plane strain analysis of elastic perfectly plastic soils with a Mohr Coulomb failure criterion. For a detailed discussion of the method \citep*[e.g, see][]{griffiths1999slope}.
-The limitation of the failure criteria and the soil model can restrict the application of the method to more complex soils who displays different characteristics. Software with a range of failure criteria and soil models exist, such as Plaxis by Bendly \citep{brinkgreve2010plaxis}. Plaxis do not have random field functionality, but alows for python scripting through an application programing interface (API). 
-The RFEM Monte Carlo method could be implemented in Plaxis by scripting random field input and automating simulation.
+The limitation of the failure criteria and the soil model can restrict the application of the method to more complex soils who displays different characteristics. Software with a range of failure criteria and soil models exist, such as Plaxis by Bently \citep{brinkgreve2010plaxis}. Plaxis do not have random field functionality. 
 
-
-Implimentation of new soil models into FEM code is not straight forward.
-
-
-
-
-You should here present the main books and articles that treat problems that are similar to what  you are studying. If you,  later in your thesis, describe the ``state of the art'' -- with a detailed literature survey, you may just give a very brief survey here (approx. a quarter of a page). If this is the only literature survey, you need to go into more details. An objective of the literature survey is to show the reader that you are familiar with the main literature within your field of research -- so that you do not ``reinvent the wheel.''
-
-
-References to literature can be given in two different ways:
-\begin{itemize}
-	\item As an \emph{explicit} reference: It is shown by \citet{gri2010NUM} and partly also by \citet{Emd2007} and mayby by \citet{fenton2008risk}  that \ldots.
-\item As an \emph{implicit} reference: It is shown \citep[e.g., see][Chap. 4]{Deg2011Geo} that \ldots.
-\end{itemize}
-In the example above, we have used ``author-year'' references, which is the preferred format. It might be wise to use a program like EndNote to keep track on the references. NTNU has licenses for EndNote. When you refer to the scientific literature, you should always write in \emph{present} tense. Example: \citet{gri2010NUM} show that \ldots. 
-\begin{remark}
- You may include a link to the Internet in the text by using a command like: \url{http://www.ntnu.edu/}.
-\end{remark} 
 
 
 %%=========================================
 \subsection*{What Remains to be Done?}
+To be abel to describe more complex geotechnical problems, a method to unify material models and numerical methods is needed. Implimentation of new soil models into FEM code is not straight forward. 
+Plaxis alows for python scripting through an application programing interface (API). 
+The RFEM Monte Carlo method could be implemented in Plaxis by scripting random field input and automating simulation.
+
+
 After you have defined and delimited your problem -- and presented the relevant results found in the literature within this field, you should sum up which parts of the problem that remain to be solved.
 %%=========================================
 \section{Objectives}
 The main objectives of this project are
 \begin{enumerate}
-\item This is the first objective
-\item This is the second objective
-\item This is the third objective
-\item More objectives
+\item Implement The RFEM Monte Carlo method in Plaxis using python API interface
+\item Demonstrate and verify the implementation on a simple slope stability problem
+\item Reproduce literature results?
+\item Comparison to analytical results
 \end{enumerate}
 
-All objectives shall be stated such that we, after having read the thesis, can see whether or not you have met the objective. ``To become familiar with \ldots'' is therefore not a suitable objective.
 
 %%=========================================
 \section{Limitations}
-In this section you describe the limitations of your study. These may be related to the study object (physical limitations, operational limitations), to the thoroughness of the analysis, and so on.
+The field of random behavior of soils in geotechnical problems is extensive and this project work scope only scratches in the surface. The methodology of finite element numerical computations and random fields is only described briefly and beyond the scope of this project course to go into in any detail.\\
+
+The python code presented is not attempted optimized in any way, the focus is on proof of concept. The result presented is a tool, further research and application will prove its usability.
+
 %%=========================================
 \section{Approach}
-Here you should describe the (scientific) approach that you will use to solve the problem and meet your objectives. You should specify the approach for each objective.
+A literature search was conducted to get an overview of the current implementations of the RFEM code. Source code and acompanying documentation was also studied where available. The main part of the project was to code the implementation of the RFEM method into the Plaxis 2D software using the python scripting API. Study of the Plaxis 2D software manual and online documentation was key to get familiar with Plaxis and the API functions to controll and automate the program execution from the python code. Example problems from literature is used to verify the validity of the implementation. Results from other software is reproduced to compare results.
+Analytical results is compared to the implementation.
 
-If there are any ethical problems related to your approach, these should be highlighted and discussed.
+
+
 %%=========================================
 \section{Structure of the Report}
-The rest of the report is structured as follows. Chapter 2 gives an introduction to \ldots
+The rest of the report is structured as follows. Chapter 2 gives an brief introduction to random field theory, finite element analysis and application to slope stability problems. In chapter 3 the implementation of the RFEM method in Plaxis using python API script is discussed. Chapter 4 compares results of simulations using the python API implementation of the RFEM method in Plaxis. Chapter 5 gives a summary and discussion of the results and main findings of the project work.
 
-\begin{remark}
-Notice that chapter and section headings shall be written in lowercase, but that all main words should start with a capital letter.
-\end{remark}
-\vspace{2pc}
-
-The length of the report is not important, \underline{the content is}! 
