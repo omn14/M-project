@@ -22,18 +22,31 @@ In this section, you should present the problem that you are going to investigat
 Current modern soil modeling software do not support random finite element method, and published reasearch random finite element software code do not have the advanced functionality as modern comercial geotechnical software.
 How ever, since the random finite element method does not change the way the problem is simulated, only the input parameters change, modern software packages can be used if a way to specify the input and the simulation run parameters can be controlled in an efficient manner.
 Plaxis, a modern software package devolped by Bently, has capabilities like this through its application program interface and python scripting. 
-It is of great interest to research on spatialy varying soil modeling to utelize the anvanced functions of existing software. Gaining this ability will expand the compexity of the problems alowed to be simulated by the RFEM method.
+It is of great interest to research on spatialy varying soil modeling to utelize the anvanced functions and ease of access of existing software. Gaining this ability will expand the compexity of the problems alowed to be simulated by the RFEM method.
 
 
 You should define your problem in a clear an unambiguous way and explain why this is a problem, why it is of interest---and to whom. It is also important to delimit the problem area.
 %%=========================================
 \subsection*{Literature Survey}
+The random finite element method (RFEM) has been in use since the mid-1990s \citep*[e.g, see][]{griffiths1993seepage}. RFEM combines random field theory to represent the spatialy varying soil with finite element method (FEM) for deformation analysis. Stochastic analysis in FEM methods can be built into the finite element equations themselvs \citep*[e.g., see][]{vanmarcke1983stochastic}, 
+or a Monte Carlo approach can be used were multiple realizations of different spatial soil models can be analyzed together. The Monte Carlo approach can be computationaly demanding, but is very flexible by utilizing arbitrary FEM code changing just the input. The Monte Carlo RFEM and its application to many geotechnical problems including seepage, bearing capacity, earth pressure and settlement is described in more detail in book by \citet*{fenton2008risk}.
+Example of RFEM analysis for slope stability is presented by \citep*[see][Chapter 13]{fenton2008risk} based on FEM code developed by \citep{smith2013programming}. The RFEM code is publicly available and extensive research has been conducted using it. A list of all but the most recent publications using the code is available here: (\url{http://random.engmath.dal.ca/rfem/rfem_pubs.html}). 
+The RFEM code is for two-dimensional plane strain analysis of elastic perfectly plastic soils with a Mohr Coulomb failure criterion. For a detailed discussion of the method \citep*[e.g, see][]{griffiths1999slope}.
+The limitation of the failure criteria and the soil model can restrict the application of the method to more complex soils who displays different characteristics. Software with a range of failure criteria and soil models exist, such as Plaxis by Bendly \citep{brinkgreve2010plaxis}. Plaxis do not have random field functionality, but alows for python scripting through an application programing interface (API). 
+The RFEM Monte Carlo method could be implemented in Plaxis by scripting random field input and automating simulation.
+
+
+Implimentation of new soil models into FEM code is not straight forward.
+
+
+
+
 You should here present the main books and articles that treat problems that are similar to what  you are studying. If you,  later in your thesis, describe the ``state of the art'' -- with a detailed literature survey, you may just give a very brief survey here (approx. a quarter of a page). If this is the only literature survey, you need to go into more details. An objective of the literature survey is to show the reader that you are familiar with the main literature within your field of research -- so that you do not ``reinvent the wheel.''
 
 
 References to literature can be given in two different ways:
 \begin{itemize}
-\item As an \emph{explicit} reference: It is shown by \citet{gri2010NUM} and partly also by \citet{Emd2007}  that \ldots.
+	\item As an \emph{explicit} reference: It is shown by \citet{gri2010NUM} and partly also by \citet{Emd2007} and mayby by \citet{fenton2008risk}  that \ldots.
 \item As an \emph{implicit} reference: It is shown \citep[e.g., see][Chap. 4]{Deg2011Geo} that \ldots.
 \end{itemize}
 In the example above, we have used ``author-year'' references, which is the preferred format. It might be wise to use a program like EndNote to keep track on the references. NTNU has licenses for EndNote. When you refer to the scientific literature, you should always write in \emph{present} tense. Example: \citet{gri2010NUM} show that \ldots. 

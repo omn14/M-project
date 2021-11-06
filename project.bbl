@@ -1,29 +1,52 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Brinkgreve et~al.(2010)Brinkgreve, Swolfs, Engin, Waterman, Chesaru,
+  Bonnier, and Galavi]{brinkgreve2010plaxis}
+R.~Brinkgreve, W.~Swolfs, E.~Engin, D.~Waterman, A.~Chesaru, P.~Bonnier, and
+  V.~Galavi.
+\newblock Plaxis 2d 2010.
+\newblock \emph{User manual, Plaxis bv}, 2010.
+
 \bibitem[Degago et~al.(2011)Degago, Grimstad, Jostad, Nordal, and
   Olsson]{Deg2011Geo}
 S.~Degago, G.~Grimstad, H.~Jostad, S.~Nordal, and M.~Olsson.
 \newblock Use and misuse of the isotache concept with respect to creep
   hypotheses a and b.
-\newblock \emph{Géotechnique}, 61\penalty0 (10):\penalty0 897--908, 2011.
+\newblock \emph{G{\'e}otechnique}, 61\penalty0 (10):\penalty0 897--908, 2011.
 \newblock ISSN 0016-8505.
-\newblock \doi{Doi 10.1680/Geot.9.P.112}.
+\newblock \doi{10.1680/Geot.9.P.112}.
 \newblock URL \url{<Go to ISI>://000295208700007}.
 
-\bibitem[Emdal et~al.(2007)Emdal, Priol, Grimstad, and Løhren]{Emd2007}
-A.~Emdal, G.~Priol, G.~Grimstad, and A.~Løhren.
+\bibitem[Emdal et~al.(2007)Emdal, Priol, Grimstad, and L{\o}hren]{Emd2007}
+A.~Emdal, G.~Priol, G.~Grimstad, and A.~L{\o}hren.
 \newblock Numerical analysis of the effect of sleepers on the lateral
   displacement of railway track.
 \newblock In \emph{Numerical Models in Geomechanics}. Taylor \& Francis, 2007.
 \newblock ISBN 978-0-415-44027-1.
-\newblock \doi{doi:10.1201/NOE0415440271.ch75 10.1201/NOE0415440271.ch75}.
+\newblock \doi{10.1201/NOE0415440271.ch75; 10.1201/NOE0415440271.ch75}.
 \newblock URL \url{http://dx.doi.org/10.1201/NOE0415440271.ch75}.
 \newblock doi:10.1201/NOE0415440271.ch75.
+
+\bibitem[Fenton et~al.(2008)Fenton, Griffiths, et~al.]{fenton2008risk}
+G.~A. Fenton, D.~V. Griffiths, et~al.
+\newblock \emph{Risk assessment in geotechnical engineering}, volume 461.
+\newblock John Wiley \& Sons New York, 2008.
+
+\bibitem[Griffiths and Fenton(1993)]{griffiths1993seepage}
+D.~Griffiths and G.~A. Fenton.
+\newblock Seepage beneath water retaining structures founded on spatially
+  random soil.
+\newblock \emph{Geotechnique}, 43\penalty0 (4):\penalty0 577--587, 1993.
+
+\bibitem[Griffiths and Lane(1999)]{griffiths1999slope}
+D.~Griffiths and P.~Lane.
+\newblock Slope stability analysis by finite elements.
+\newblock \emph{Geotechnique}, 49\penalty0 (3):\penalty0 387--403, 1999.
 
 \bibitem[Grimstad and Degago(2010)]{gri2010NUM}
 G.~Grimstad and S.~Degago.
@@ -31,8 +54,20 @@ G.~Grimstad and S.~Degago.
 \newblock In \emph{Numerical Methods in Geotechnical Engineering}, pages 3--8.
   CRC Press, 2010.
 \newblock ISBN 978-0-415-59239-0.
-\newblock \doi{doi:10.1201/b10551-3 10.1201/b10551-3}.
+\newblock \doi{10.1201/b10551-3; 10.1201/b10551-3}.
 \newblock URL \url{http://dx.doi.org/10.1201/b10551-3}.
 \newblock doi:10.1201/b10551-3.
+
+\bibitem[Smith et~al.(2013)Smith, Griffiths, and
+  Margetts]{smith2013programming}
+I.~M. Smith, D.~V. Griffiths, and L.~Margetts.
+\newblock \emph{Programming the finite element method}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem[Vanmarcke and Grigoriu(1983)]{vanmarcke1983stochastic}
+E.~Vanmarcke and M.~Grigoriu.
+\newblock Stochastic finite element analysis of simple beams.
+\newblock \emph{Journal of engineering mechanics}, 109\penalty0 (5):\penalty0
+  1203--1214, 1983.
 
 \end{thebibliography}
