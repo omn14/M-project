@@ -13,14 +13,17 @@
 \BOOKMARK [1][-]{section.2.2}{Finite Element Method}{chapter.2}% 13
 \BOOKMARK [0][-]{chapter.3}{RFEM implementation in Plaxis 2D using python API}{}% 14
 \BOOKMARK [1][-]{section.3.1}{SRM implementation}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Homogenous soil - Infinite spatial correlation length}{chapter.4}% 17
-\BOOKMARK [0][-]{chapter.5}{Summary}{}% 18
-\BOOKMARK [1][-]{section.5.1}{Summary and Conclusions}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.2}{Discussion}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.3}{Recommendations for Further Work}{chapter.5}% 21
-\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 22
-\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 23
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 24
-\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 25
-\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 26
+\BOOKMARK [1][-]{section.3.2}{Local averaging}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Plaxis 2D}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Monte Carlo}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Homogenous soil - Infinite spatial correlation length}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Summary}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Summary and Conclusions}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.2}{Discussion}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.3}{Recommendations for Further Work}{chapter.5}% 24
+\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 25
+\BOOKMARK [0][-]{appendix.B}{Additional Information}{}% 26
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 27
+\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 28
+\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 29

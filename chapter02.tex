@@ -5,7 +5,50 @@ The content of this chapter will vary with the topic of your thesis.
 
 \section{Random Fields}
 
+To model the spatial variability of soils random fields are used. To describe the random field of a soil parameter, e. g. the undrained shear strength of the soil, three parameters are commonly used. 
+The Mean, $\mu$, Standart deviation, $\sigma$ of the soil parameters underlying probability distribution and the Spatial correlation length, $\theta$ also known as the scale of fluctuation.   
+The mean is a measure of around which value the soil strength parameter is distributed. The standard deviation tells how much the values in the soil random fields varies in values. The spatial correlation length, or scale of fluctuation, is a measure of how similar in strength points in the spatial random field are depending on how far away the points are from each other. Large spatial correlation length vary smoothly and varying slowly, while scale of fluctuation is jagged and rappidly varying. 
+Du to the process of soil deposition the soil tend to have different properties in differing direction. We say that soil is anisotropic. Typically for layered soils, the soil properties are more similar in the horizontal direction than in the vertical direction. This anisotropy can be represented by having a different scale of fluctuation in the horozontal directial than in the vertical direction.
+\remark{Difference between homogenous media and isotropic}
+
 \subsection{SRM - Spectral Representation Method}
+
+Various methods exist for generating random fields that can be used to represent spatialy variable soil. \citep*[see e. g.][Chapter 6]{fenton2008risk}. The methods differ in their efficiency and accuracy and complexity e. g. ability to describe anisotropy.
+In this project work the spectral representation method is used. It is showed by \citet*{shinozuka1996simulation} how to simulate multi-dimensional homogeneous stochastic fields using the spectral representation method. 
+Sample functions of the stochastic field can be generated using a cosine series formula. These sample functions accurately reflect the prescribed probabilistic characteristics of the stochastic field when the number of terms in the cosine series is large.
+
+\begin{equation}
+\label{eq114}
+	f(x,y) = \sqrt{2}\sum_{n_1=0}^{N_1-1} \sum_{n_2=0}^{N_2-1} A_{n_1 n_2} [cos(\kappa_{1_{n_1}} x_1 + \kappa_{2_{n_2}} x_2 + \Phi_{n_1 n_2}^{(1)}) + cos(\kappa_{1_{n_1}} x_1 - \kappa_{2_{n_2}} x_2 + \Phi_{n_1 n_2}^{(2)}) ]
+\end{equation}
+
+where:
+
+\begin{equation}
+\label{eq45}
+	A_{n_1 n_2} = \sqrt{2S_{f_0 f_0}(\kappa_{1_{n_1}},\kappa_{2_{n_2}})\Delta\kappa_1\Delta\kappa_2}
+\end{equation}
+
+\begin{equation}
+\label{eq47}
+	\kappa_{1_{n_1}} = n_1 \Delta\kappa_1 \quad\text{and}\quad \kappa_{2_{n_2}} = n_2 \Delta\kappa_2
+\end{equation}
+
+\begin{equation}
+\label{eq48}
+	\Delta\kappa_1 = \frac{\kappa_{1u}}{N_1} \quad\text{and}\quad \Delta\kappa_2 = \frac{\kappa_{2u}}{N_2} 
+\end{equation}
+
+and:
+
+\begin{equation}
+\label{eq49}
+	A_{{0}n_2} = A_{{n_1}0} = 0 \quad\text{for}\quad n_1 = n_2 = 0,1,\dots,N_1-1
+\end{equation}
+
+
+
+See chapter 3 for details on implementation.
 
 \section{Finite Element Method}
 

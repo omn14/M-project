@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,14 @@ R.~Brinkgreve, W.~Swolfs, E.~Engin, D.~Waterman, A.~Chesaru, P.~Bonnier, and
   V.~Galavi.
 \newblock Plaxis 2d 2010.
 \newblock \emph{User manual, Plaxis bv}, 2010.
+
+\bibitem[Deodatis et~al.(1990)Deodatis, Shinozuka, and
+  Papageorgiou]{deodatis1990stochastic}
+G.~Deodatis, M.~Shinozuka, and A.~Papageorgiou.
+\newblock Stochastic wave representation of seismic ground motion. ii:
+  Simulation.
+\newblock \emph{Journal of engineering mechanics}, 116\penalty0 (11):\penalty0
+  2381--2399, 1990.
 
 \bibitem[Fenton et~al.(2008)Fenton, Griffiths, et~al.]{fenton2008risk}
 G.~A. Fenton, D.~V. Griffiths, et~al.
@@ -27,6 +35,12 @@ D.~Griffiths and G.~A. Fenton.
 D.~Griffiths and P.~Lane.
 \newblock Slope stability analysis by finite elements.
 \newblock \emph{Geotechnique}, 49\penalty0 (3):\penalty0 387--403, 1999.
+
+\bibitem[Shinozuka and Deodatis(1996)]{shinozuka1996simulation}
+M.~Shinozuka and G.~Deodatis.
+\newblock Simulation of multi-dimensional gaussian stochastic fields by
+  spectral representation.
+\newblock 1996.
 
 \bibitem[Smith et~al.(2013)Smith, Griffiths, and
   Margetts]{smith2013programming}
