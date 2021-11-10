@@ -6,9 +6,62 @@ The content of this chapter will vary with the topic of your thesis.
 
 \section{SRM implementation}
 
-In generating the random soil strength field an implementation of the SRM method written in MATLAB code by Yutao Pan out of \citet*{deodatis1990stochastic} was converted to python code.
+In generating the random soil strength field an implementation of the SRM method written in MATLAB code by Yutao Pan out of \citet*{deodatis1990stochastic} is converted to python code.
+
+\begin{lstlisting}[language=Python, caption=Python example]
+import numpy as np
+
+def incmatrix(genl1,genl2):
+    m = len(genl1)
+    n = len(genl2)
+    M = None #to become the incidence matrix
+    VT = np.zeros((n*m,1), int)  #dummy variable
+
+    #compute the bitwise xor matrix
+    M1 = bitxormatrix(genl1)
+    M2 = np.triu(bitxormatrix(genl2),1)
+
+    for i in range(m-1):
+        for j in range(i+1, m):
+            [r,c] = np.where(M2 == M1[i,j])
+            for k in range(len(r)):
+                VT[(i)*n + r[k]] = 1;
+                VT[(i)*n + c[k]] = 1;
+                VT[(j)*n + r[k]] = 1;
+                VT[(j)*n + c[k]] = 1;
+
+                if M is None:
+                    M = np.copy(VT)
+                else:
+                    M = np.concatenate((M, VT), 1)
+
+                VT = np.zeros((n*m,1), int)
+
+    return M
+\end{lstlisting}
 
 \section{Local averaging}
+
+When i. e. a clay sample is sheard in the laboratory to detrmine strength parameters, failure develops over the whole sample when the bonds of the sample yield. The measured strength is a function of the average bond strength of the sample. The greater the sample size the stronger is the averaging effect.
+Input parameters in modeling, in the case of RFEM, the mean, standard deviation and spatial correlation length are assumed to be point measures. 
+Therefore when populating a RFEM model spatial averaging needs to be taken into account since the element sizes is in general much grater than the size of the sample from wich the parameter was derived.
+It can be shown \citep*{vanmarcke2010random} that the the reduction in variance due to local averaging is given by:
+\begin{equation}
+\label{eq3.39}
+	\sigma_A = \sigma \sqrt{\gamma} 
+\end{equation}
+
+where $\sigma_A$ is the new spatially averaged variance wich is to be put into the finite element mesh and $\gamma$ is the variance reduction function, defined for a rectangular element as:
+
+\begin{equation}
+\label{eq3.42}
+	\gamma = \frac{4}{T_x^2 T_y^2} \int_0^{T_x} \int_0^{T_y} (T_x-\tau_x)(T_y-\tau_y)\rho(\tau_x,\tau_y)d\tau_xd\tau_y
+\end{equation}
+
+where $T$ is the size of the element in the $x$ and $y$ direction $\rho$ is the correlation function and $\tau$ is the difference between the $x$ and $y$ coordinates of any two points in the random field.
+
+It can further be seen that the value of $\gamma$ goes to $1$ when $T$ goes to $0$. So setting \(T=\alpha \theta\) leads to the conclution that elements much smaller than the scale of fluctuation is not affected by variance reduction.
+In this project work this realization is used.
 
 \section{Plaxis 2D}
 
