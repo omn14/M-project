@@ -51,23 +51,44 @@ It can be shown \citep*{vanmarcke2010random} that the the reduction in variance 
 	\sigma_A = \sigma \sqrt{\gamma} 
 \end{equation}
 
-where $\sigma_A$ is the new spatially averaged variance wich is to be put into the finite element mesh and $\gamma$ is the variance reduction function, defined for a rectangular element as:
+where $\sigma_A$ is the new spatially averaged variance wich is to be used when drawing samples from the distribution to put into the finite element mesh and $\gamma$ is the variance reduction function, defined for a rectangular element as:
 
 \begin{equation}
 \label{eq3.42}
 	\gamma = \frac{4}{T_x^2 T_y^2} \int_0^{T_x} \int_0^{T_y} (T_x-\tau_x)(T_y-\tau_y)\rho(\tau_x,\tau_y)d\tau_xd\tau_y
 \end{equation}
 
-where $T$ is the size of the element in the $x$ and $y$ direction $\rho$ is the correlation function and $\tau$ is the difference between the $x$ and $y$ coordinates of any two points in the random field.
+where $T_x$ and $T_y$ is the size of the element in the $x$ and $y$ direction respectivly, $\rho$ is the correlation function and $\tau_x$ and $\tau_y$ is the difference between the respectivly the $x$ and $y$ coordinates of any two points in the random field.
 
-It can further be seen that the value of $\gamma$ goes to $1$ when $T$ goes to $0$. So setting \(T=\alpha \theta\) leads to the conclution that elements much smaller than the scale of fluctuation is not affected by variance reduction.
-In this project work this realization is used.
+$\gamma$ has the value of $1.0$ when $T=0$ \citep[see][chapter 3]{fenton2008risk}. Setting \(T=\alpha \theta\) (i.e some scalar $\alpha$ times the scale of fluctuation $\theta$) leads to the conclution that elements much smaller than the scale of fluctuation is affected to small degree by variance reduction.
 
-\section{Plaxis 2D}
+In this project work this realization is used, but to what degree is left to be discussed.
 
 \section{Monte Carlo}
 
+Monte Carlo is a method that can estimate the means, varances and probabilities of the responses of complex systems to random input \citep[see][chapter 6.6]{fenton2008risk}. 
+Consider the random response of a system $g(X_1,X_2)$ where $X_1$ and $X_2$ are random variables. The system fails if the the value of $g(X_1,X_2) > g_{critical}$. Monte Carlo simulates a sequence of realizations of $X_1$ and $X_2$,  evaluates $g(X_1,X_2)$ and checks if $g(X_1,X_2) > g_{critical}$. 
 
+The method is very versitile and can be applied to most kinds of systems. 
+Drawbacks is that there are no analytical solution, if the system, e.g. the input is changed, the simulation must be rerun, we can not predict the response to a change in input. 
+Also, to simulate rear events, alot of simulations is needed wich can be computational demanding.
 
+\section{Plaxis 2D}
 
+The following procedure to run the RFEM Monte Carlo analysis is implemented in Plaxis using the python API.
+The user specify the input soil parameters, the problem geometry and the desired number of realizations. One realization is one stability simulation on one random field. The procedure is run fully autonomus without user interaction.
+
+\begin{enumerate}
+	\item{The script start by creating a new empty Plaxis project}
+	\item{Next, the problem geometry is generated i.e. the slope height, inclination and extent.}
+	\item{The random field representing the soil property is generated based on the user specified mean, standart deviation (or CoV) and scale of fluctuation}
+		
+	\item{The soil elements are populated with the soil parameter values from the random field.}
+	\item{Then Plaxis grids the geometry generating the FEM mesh}
+	\item{Next a new phase is added after the initaial phase, activating the geometry represented by the soil}
+	\item{Finaly the deformations are calculated and a result is stored, i.e. failure or no filure in a slope stability problem}
+	\item{Now step 3 to 7 is repeated generating a new realization of the random field, a user specified number of times}
+	\item{In the end statistics are gathered and written to a file, and plots of the results can be displayed}
+
+\end{enumerate}
 

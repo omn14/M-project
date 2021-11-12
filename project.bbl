@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -36,6 +36,11 @@ D.~Griffiths and P.~Lane.
 \newblock Slope stability analysis by finite elements.
 \newblock \emph{Geotechnique}, 49\penalty0 (3):\penalty0 387--403, 1999.
 
+\bibitem[Janbu(1968)]{Janbu1968slope}
+N.~Janbu.
+\newblock Slope stability computation.
+\newblock \emph{Soil Mechanics and Foundation Engineering Report}, 1968.
+
 \bibitem[Nordal(2020)]{nordal2020compendium}
 S.~Nordal.
 \newblock Tba4116 geotechnical engineering advanced course.
@@ -52,6 +57,11 @@ M.~Shinozuka and G.~Deodatis.
 I.~M. Smith, D.~V. Griffiths, and L.~Margetts.
 \newblock \emph{Programming the finite element method}.
 \newblock John Wiley \& Sons, 2013.
+
+\bibitem[Vanmarcke(2010)]{vanmarcke2010random}
+E.~Vanmarcke.
+\newblock \emph{Random fields: analysis and synthesis}.
+\newblock World scientific, 2010.
 
 \bibitem[Vanmarcke and Grigoriu(1983)]{vanmarcke1983stochastic}
 E.~Vanmarcke and M.~Grigoriu.
