@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.23)  18 NOV 2021 13:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.23)  18 NOV 2021 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,7 +632,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<fig/NTNU.pdf, id=127, 241.90375pt x 53.19875pt>
+<fig/NTNU.pdf, id=128, 241.90375pt x 53.19875pt>
 File: fig/NTNU.pdf Graphic file (type pdf)
 <use fig/NTNU.pdf>
 Package pdftex.def Info: fig/NTNU.pdf  used on input line 16.
@@ -737,7 +737,7 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 15.
- (./SRM.py
+ (./pyt/SRM.py
 [10
 
 
@@ -755,7 +755,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 18.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 18.
-<fig/testRF.png, id=441, 425.9112pt x 189.8292pt>
+<fig/testRF.png, id=442, 425.9112pt x 189.8292pt>
 File: fig/testRF.png Graphic file (type png)
 <use fig/testRF.png>
 Package pdftex.def Info: fig/testRF.png  used on input line 37.
@@ -767,7 +767,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/testp.png, id=443, 1606.0pt x 1204.5pt>
+<fig/testp.png, id=444, 1606.0pt x 1204.5pt>
 File: fig/testp.png Graphic file (type png)
 <use fig/testp.png>
 Package pdftex.def Info: fig/testp.png  used on input line 43.
@@ -775,7 +775,7 @@ Package pdftex.def Info: fig/testp.png  used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/Chart1.png, id=444, 1355.0625pt x 941.01563pt>
+<fig/Chart1.png, id=445, 1355.0625pt x 941.01563pt>
 File: fig/Chart1.png Graphic file (type png)
 <use fig/Chart1.png>
 Package pdftex.def Info: fig/Chart1.png  used on input line 49.
@@ -788,43 +788,43 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [16 <./fig/testRF.png> <./fig/testp.png (PNG copy)>] [17 <./fig/Chart1.png>]
-<fig/ss/test20211118-125353.png, id=468, 426.1521pt x 189.8292pt>
+<fig/ss/test20211118-125353.png, id=469, 426.1521pt x 189.8292pt>
 File: fig/ss/test20211118-125353.png Graphic file (type png)
 <use fig/ss/test20211118-125353.png>
 Package pdftex.def Info: fig/ss/test20211118-125353.png  used on input line 90.
 
 (pdftex.def)             Requested size: 224.21771pt x 99.87904pt.
-<fig/ss/testp20211118-125455.png, id=469, 1606.0pt x 1204.5pt>
+<fig/ss/testp20211118-125455.png, id=470, 1606.0pt x 1204.5pt>
 File: fig/ss/testp20211118-125455.png Graphic file (type png)
 <use fig/ss/testp20211118-125455.png>
 Package pdftex.def Info: fig/ss/testp20211118-125455.png  used on input line 98
 .
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/ss/test20211118-125713.png, id=470, 425.9112pt x 189.8292pt>
+<fig/ss/test20211118-125713.png, id=471, 425.9112pt x 189.8292pt>
 File: fig/ss/test20211118-125713.png Graphic file (type png)
 <use fig/ss/test20211118-125713.png>
 Package pdftex.def Info: fig/ss/test20211118-125713.png  used on input line 106
 .
 (pdftex.def)             Requested size: 224.21771pt x 99.93408pt.
-<fig/ss/testp20211118-125818.png, id=471, 1606.0pt x 1204.5pt>
+<fig/ss/testp20211118-125818.png, id=472, 1606.0pt x 1204.5pt>
 File: fig/ss/testp20211118-125818.png Graphic file (type png)
 <use fig/ss/testp20211118-125818.png>
 Package pdftex.def Info: fig/ss/testp20211118-125818.png  used on input line 11
 4.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/ss/test20211118-125941.png, id=472, 425.9112pt x 189.8292pt>
+<fig/ss/test20211118-125941.png, id=473, 425.9112pt x 189.8292pt>
 File: fig/ss/test20211118-125941.png Graphic file (type png)
 <use fig/ss/test20211118-125941.png>
 Package pdftex.def Info: fig/ss/test20211118-125941.png  used on input line 121
 .
 (pdftex.def)             Requested size: 224.21771pt x 99.93408pt.
-<fig/ss/testp20211118-130042.png, id=473, 1606.0pt x 1204.5pt>
+<fig/ss/testp20211118-130042.png, id=474, 1606.0pt x 1204.5pt>
 File: fig/ss/testp20211118-130042.png Graphic file (type png)
 <use fig/ss/testp20211118-130042.png>
 Package pdftex.def Info: fig/ss/testp20211118-130042.png  used on input line 12
 9.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/pfailit20211116-090042.png, id=474, 394.3533pt x 277.9986pt>
+<fig/pfailit20211116-090042.png, id=475, 394.3533pt x 277.9986pt>
 File: fig/pfailit20211116-090042.png Graphic file (type png)
 <use fig/pfailit20211116-090042.png>
 Package pdftex.def Info: fig/pfailit20211116-090042.png  used on input line 141
@@ -852,7 +852,7 @@ ents are used. A line load of 1000kPa
  []
 
 [20 <./fig/pfailit20211116-090042.png>]
-<fig/bc/Chart2.png, id=501, 1355.0625pt x 941.01563pt>
+<fig/bc/Chart2.png, id=502, 1355.0625pt x 941.01563pt>
 File: fig/bc/Chart2.png Graphic file (type png)
 <use fig/bc/Chart2.png>
 Package pdftex.def Info: fig/bc/Chart2.png  used on input line 190.
@@ -861,7 +861,7 @@ Package pdftex.def Info: fig/bc/Chart2.png  used on input line 190.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/bc/test20211116-100048.png, id=502, 425.9112pt x 189.8292pt>
+<fig/bc/test20211116-100048.png, id=503, 425.9112pt x 189.8292pt>
 File: fig/bc/test20211116-100048.png Graphic file (type png)
 <use fig/bc/test20211116-100048.png>
 Package pdftex.def Info: fig/bc/test20211116-100048.png  used on input line 195
@@ -870,7 +870,7 @@ Package pdftex.def Info: fig/bc/test20211116-100048.png  used on input line 195
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/bc/testp20211116-100145.png, id=503, 1606.0pt x 1204.5pt>
+<fig/bc/testp20211116-100145.png, id=504, 1606.0pt x 1204.5pt>
 File: fig/bc/testp20211116-100145.png Graphic file (type png)
 <use fig/bc/testp20211116-100145.png>
 Package pdftex.def Info: fig/bc/testp20211116-100145.png  used on input line 20
@@ -879,7 +879,7 @@ Package pdftex.def Info: fig/bc/testp20211116-100145.png  used on input line 20
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/bc/testutot20211116-100146.png, id=504, 1606.0pt x 1204.5pt>
+<fig/bc/testutot20211116-100146.png, id=505, 1606.0pt x 1204.5pt>
 File: fig/bc/testutot20211116-100146.png Graphic file (type png)
 <use fig/bc/testutot20211116-100146.png>
 Package pdftex.def Info: fig/bc/testutot20211116-100146.png  used on input line
@@ -902,7 +902,7 @@ Overfull \hbox (14.83217pt too wide) in paragraph at lines 211--233
 eld in-put rep-re-sent-ing the soil undrained
  []
 
-<fig/bc/nx/bc_histogram20211117-091648.png, id=534, 384.7173pt x 277.9986pt>
+<fig/bc/nx/bc_histogram20211117-091648.png, id=535, 384.7173pt x 277.9986pt>
 File: fig/bc/nx/bc_histogram20211117-091648.png Graphic file (type png)
 <use fig/bc/nx/bc_histogram20211117-091648.png>
 Package pdftex.def Info: fig/bc/nx/bc_histogram20211117-091648.png  used on inp
@@ -911,13 +911,13 @@ ut line 239.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/bc/nx/testp20211116-101822.png, id=535, 1606.0pt x 1204.5pt>
+<fig/bc/nx/testp20211116-101822.png, id=536, 1606.0pt x 1204.5pt>
 File: fig/bc/nx/testp20211116-101822.png Graphic file (type png)
 <use fig/bc/nx/testp20211116-101822.png>
 Package pdftex.def Info: fig/bc/nx/testp20211116-101822.png  used on input line
  249.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/bc/nx/testutot20211116-1018220.0972879216409623.png, id=536, 1606.0pt x 12
+<fig/bc/nx/testutot20211116-1018220.0972879216409623.png, id=537, 1606.0pt x 12
 04.5pt>
 File: fig/bc/nx/testutot20211116-1018220.0972879216409623.png Graphic file (typ
 e png)
@@ -925,13 +925,13 @@ e png)
 Package pdftex.def Info: fig/bc/nx/testutot20211116-1018220.0972879216409623.pn
 g  used on input line 257.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/bc/nx/testp20211116-101338.png, id=537, 1606.0pt x 1204.5pt>
+<fig/bc/nx/testp20211116-101338.png, id=538, 1606.0pt x 1204.5pt>
 File: fig/bc/nx/testp20211116-101338.png Graphic file (type png)
 <use fig/bc/nx/testp20211116-101338.png>
 Package pdftex.def Info: fig/bc/nx/testp20211116-101338.png  used on input line
  265.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/bc/nx/testutot20211116-1013380.0989476562699225.png, id=538, 1606.0pt x 12
+<fig/bc/nx/testutot20211116-1013380.0989476562699225.png, id=539, 1606.0pt x 12
 04.5pt>
 File: fig/bc/nx/testutot20211116-1013380.0989476562699225.png Graphic file (typ
 e png)
@@ -939,13 +939,13 @@ e png)
 Package pdftex.def Info: fig/bc/nx/testutot20211116-1013380.0989476562699225.pn
 g  used on input line 273.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/bc/nx/testp20211116-100901.png, id=539, 1606.0pt x 1204.5pt>
+<fig/bc/nx/testp20211116-100901.png, id=540, 1606.0pt x 1204.5pt>
 File: fig/bc/nx/testp20211116-100901.png Graphic file (type png)
 <use fig/bc/nx/testp20211116-100901.png>
 Package pdftex.def Info: fig/bc/nx/testp20211116-100901.png  used on input line
  280.
 (pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
-<fig/bc/nx/testutot20211116-100901.png, id=540, 1606.0pt x 1204.5pt>
+<fig/bc/nx/testutot20211116-100901.png, id=541, 1606.0pt x 1204.5pt>
 File: fig/bc/nx/testutot20211116-100901.png Graphic file (type png)
 <use fig/bc/nx/testutot20211116-100901.png>
 Package pdftex.def Info: fig/bc/nx/testutot20211116-100901.png  used on input l
@@ -987,31 +987,50 @@ Appendix A.
 
  (./appendix-b.tex
 Appendix B.
-) [32
+(./pyt/RFEM01.py [32
 
 
 
-] (./project.bbl)
+] [33] [34]) (./pyt/RFEM02.py [35]) (./pyt/RFEM03.py
+[36]) [37] (./pyt/RFEM04_qc.py) (./pyt/RFEM05_qc.py)
+<fig/strt.png, id=843, 773.13844pt x 531.48563pt>
+File: fig/strt.png Graphic file (type png)
+<use fig/strt.png>
+Package pdftex.def Info: fig/strt.png  used on input line 18.
+(pdftex.def)             Requested size: 472.03123pt x 324.4896pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [38] [39 <./fig/strt.png (PNG copy)>] (./project.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
- [33
+ [40
 
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
- (./project.aux (./00_front.aux) (./01_preface.aux)
-(./03_summary.aux) (./chapter01.aux) (./chapter02.aux) (./chapter03.aux)
-(./chapter04.aux) (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
+ (./project.aux
+(./00_front.aux) (./01_preface.aux) (./03_summary.aux) (./chapter01.aux)
+(./chapter02.aux) (./chapter03.aux) (./chapter04.aux) (./chapter0n.aux)
+(./acronyms.aux) (./appendix-b.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
-Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: 3AE5E10104B2A0AE8AB34081259904E5;2222.
+
+
+Package rerunfilecheck Warning: File `project.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `project.out':
+(rerunfilecheck)             Before: C4941AF4004CB9785128EFCE565E8037;2249
+(rerunfilecheck)             After:  7990A159A594B17C25420724ECDF93E0;2253.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 11829 strings out of 483183
- 172947 string characters out of 5966292
- 812296 words of memory out of 5000000
- 26268 multiletter control sequences out of 15000+600000
+ 12252 strings out of 483183
+ 178988 string characters out of 5966292
+ 836334 words of memory out of 5000000
+ 26400 multiletter control sequences out of 15000+600000
  638699 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,11n,50p,686b,2081s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1026,10 +1045,10 @@ s/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type
 ia/putbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on project.pdf (37 pages, 2348126 bytes).
+Output written on project.pdf (44 pages, 2521349 bytes).
 PDF statistics:
- 749 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
- 225 named destinations out of 1000 (max. 500000)
- 359 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1130 PDF objects out of 1200 (max. 8388607)
+ 931 compressed objects within 10 object streams
+ 499 named destinations out of 1000 (max. 500000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {5.2}Discussion}{29}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Recommendations for Further Work}{29}{section.5.3}%
 \contentsline {chapter}{\numberline {A}Acronyms}{31}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Additional Information}{32}{appendix.B}%
+\contentsline {chapter}{\numberline {B}Source code}{32}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Introduction}{32}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}More Details}{32}{subsection.B.1.1}%
-\contentsline {chapter}{Bibliography}{33}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {B.1.1}Starting Python scripting interface - Jupyer notebook}{38}{subsection.B.1.1}%
+\contentsline {chapter}{Bibliography}{40}{figure.caption.23}%
