@@ -1,30 +1,31 @@
-\contentsline {section}{Preface}{i}{Doc-Start}%
-\contentsline {section}{Acknowledgment}{ii}{section*.1}%
-\contentsline {section}{Summary and Conclusions}{iii}{section*.2}%
+\contentsline {section}{Preface}{i}{figure.caption.1}%
+\contentsline {section}{Summary and Conclusions}{ii}{section*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectives}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Limitations}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Limitations}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Approach}{5}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Structure of the Report}{5}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Theory}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Random Fields}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}SRM - Spectral Representation Method}{7}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Finite Element Method}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Finite Element Method}{8}{section.2.2}%
 \contentsline {chapter}{\numberline {3}RFEM implementation in Plaxis 2D using python API}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}SRM implementation}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Local averaging}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Monte Carlo}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Plaxis 2D}{12}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Results}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Homogenous isotropic soil - Zero variance}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Homogenus anisotropic soil - Spatial correlation length 50 and 10, COV=0.3}{15}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Summary}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary and Conclusions}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Discussion}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{19}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Acronyms}{21}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Additional Information}{22}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Introduction}{22}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}More Details}{22}{subsection.B.1.1}%
-\contentsline {chapter}{Bibliography}{23}{subsection.B.1.1}%
+\contentsline {section}{\numberline {3.2}Local averaging}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Monte Carlo}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Plaxis 2D}{14}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Results}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Slope Stability problem - Homogeneous isotropic soil - Zero variance}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Slope stability problem - Homogeneous anisotropic soil - Scale of Fluctuation 20 and 10 meters, CoV=0.3 - Monte Carlo 250 realizations}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Bearing Capacity Problem - Homogeneous isotropic soil - CoV=0.0 - Known analytical solution}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Bearing Capacity Problem - Homogeneous anisotropic soil - Scale of Fluctuation 8 and 3 meters, CoV=0.1, Monte Carlo 250 realizations}{25}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Summary}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary and Conclusions}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Discussion}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{29}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Acronyms}{31}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Additional Information}{32}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Introduction}{32}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}More Details}{32}{subsection.B.1.1}%
+\contentsline {chapter}{Bibliography}{33}{subsection.B.1.1}%

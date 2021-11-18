@@ -16,45 +16,45 @@ The style file: abbrvnat.bst
 Database file #1: GG_kbibtex_Library.bib
 Warning--empty journal in nordal2020compendium
 Warning--empty journal in shinozuka1996simulation
-You've used 11 entries,
+You've used 12 entries,
             2773 wiz_defined-function locations,
-            669 strings with 6301 characters,
-and the built_in function-call counts, 4620 in all, are:
-= -- 392
-> -- 269
+            674 strings with 6457 characters,
+and the built_in function-call counts, 5018 in all, are:
+= -- 423
+> -- 299
 < -- 8
-+ -- 92
-- -- 81
-* -- 360
-:= -- 733
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 56
-chr.to.int$ -- 11
-cite$ -- 24
-duplicate$ -- 220
-empty$ -- 385
-format.name$ -- 100
-if$ -- 946
++ -- 102
+- -- 90
+* -- 392
+:= -- 793
+add.period$ -- 35
+call.type$ -- 12
+change.case$ -- 62
+chr.to.int$ -- 12
+cite$ -- 26
+duplicate$ -- 236
+empty$ -- 418
+format.name$ -- 110
+if$ -- 1029
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 14
-newline$ -- 63
-num.names$ -- 44
-pop$ -- 125
+newline$ -- 67
+num.names$ -- 48
+pop$ -- 141
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 53
 quote$ -- 0
-skip$ -- 166
+skip$ -- 182
 stack$ -- 0
-substring$ -- 134
-swap$ -- 10
+substring$ -- 136
+swap$ -- 11
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 106
+type$ -- 117
 warning$ -- 2
-while$ -- 41
+while$ -- 44
 width$ -- 0
-write$ -- 142
+write$ -- 152
 (There were 2 warnings)

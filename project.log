@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.23)  12 NOV 2021 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.8.23)  18 NOV 2021 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,15 +463,45 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen175
+\captionmargin@=\dimen176
+\captionwidth=\dimen177
+\caption@tempdima=\dimen178
+\caption@indent=\dimen179
+\caption@parindent=\dimen180
+\caption@hangindent=\dimen181
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count282
+\c@continuedfloat=\count283
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+)
+\c@subfigure=\count284
+\c@subtable=\count285
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count282
+\l__kernel_color_stack_int=\count286
 \l__pdf_internal_box=\box50
 )
-(./project.aux (./00_front.aux) (./01_preface.aux) (./02_acknowledgment.aux)
-(./03_summary.aux) (./chapter01.aux) (./chapter02.aux) (./chapter03.aux)
-(./chapter04.aux) (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
+(./project.aux (./00_front.aux) (./01_preface.aux) (./03_summary.aux)
+(./chapter01.aux) (./chapter02.aux) (./chapter03.aux) (./chapter04.aux)
+(./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
 \openout1 = `project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -517,16 +547,16 @@ LaTeX Font Info:    ... okay on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
-\scratchdimen=\dimen175
+\scratchcounter=\count287
+\scratchdimen=\dimen182
 \scratchbox=\box51
-\nofMPsegments=\count284
-\nofMParguments=\count285
+\nofMPsegments=\count288
+\nofMParguments=\count289
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count286
-\MPscratchDim=\dimen176
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen183
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
 \everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -582,7 +612,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count289
+\c@section@level=\count293
 )
 LaTeX Info: Redefining \ref on input line 13.
 LaTeX Info: Redefining \pageref on input line 13.
@@ -592,7 +622,9 @@ LaTeX Info: Redefining \nameref on input line 13.
 \@outlinefile=\write3
 \openout3 = `project.out'.
 
-\c@lstlisting=\count290
+\c@lstlisting=\count294
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 \openout2 = `00_front.aux'.
 
  (./00_front.tex
@@ -600,7 +632,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<fig/NTNU.pdf, id=123, 241.90375pt x 53.19875pt>
+<fig/NTNU.pdf, id=127, 241.90375pt x 53.19875pt>
 File: fig/NTNU.pdf Graphic file (type pdf)
 <use fig/NTNU.pdf>
 Package pdftex.def Info: fig/NTNU.pdf  used on input line 16.
@@ -618,17 +650,7 @@ Overfull \hbox (41.1433pt too wide) in paragraph at lines 6--18
 
 
 (./01_preface.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
@@ -636,15 +658,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
 
 ]
-\openout2 = `02_acknowledgment.aux'.
-
- (./02_acknowledgment.tex) [2
-
-
-]
 \openout2 = `03_summary.aux'.
 
- (./03_summary.tex) [3
+ (./03_summary.tex) [2
 
 
 ] (./project.toc
@@ -666,7 +682,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 1.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 1.
- [4
+ [3
 
 
 ])
@@ -683,31 +699,22 @@ l.23 \include{chapter01}
 
  (./chapter01.tex
 Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--21
-
- []
-
 [2
 
 
 ]
-Overfull \hbox (11.23227pt too wide) in paragraph at lines 27--28
-[]\T1/futs/m/n/12 Common causes of dis-crep-ancy be-tween the es-ti-mated and a
-c-tual per-for-mance of any geotech-
- []
-
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-5.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+0.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Overfull \hbox (5.06824pt too wide) in paragraph at lines 49--50
+[]\T1/futs/m/n/12 Demonstrate ver-sa-til-ity by ex-tend-ing the im-ple-men-ta-t
+ion to a sim-ple bear-ing ca-pac-ity prob-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
@@ -720,7 +727,7 @@ Chapter 2.
 
 
 
-] [7]) [8] [9]
+] [7] [8]) [9]
 \openout2 = `chapter03.aux'.
 
  (./chapter03.tex
@@ -729,13 +736,13 @@ Chapter 3.
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 11.
- [10
+nput line 15.
+ (./SRM.py
+[10
 
 
 
-] [11]
-[12]) [13]
+] [11]) [12] [13]) [14]
 \openout2 = `chapter04.aux'.
 
  (./chapter04.tex
@@ -748,7 +755,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 18.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 18.
-<fig/testRF.png, id=361, 425.9112pt x 189.8292pt>
+<fig/testRF.png, id=441, 425.9112pt x 189.8292pt>
 File: fig/testRF.png Graphic file (type png)
 <use fig/testRF.png>
 Package pdftex.def Info: fig/testRF.png  used on input line 37.
@@ -760,7 +767,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/testp.png, id=363, 1606.0pt x 1204.5pt>
+<fig/testp.png, id=443, 1606.0pt x 1204.5pt>
 File: fig/testp.png Graphic file (type png)
 <use fig/testp.png>
 Package pdftex.def Info: fig/testp.png  used on input line 43.
@@ -768,7 +775,7 @@ Package pdftex.def Info: fig/testp.png  used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/Chart1.png, id=364, 1355.0625pt x 941.01563pt>
+<fig/Chart1.png, id=444, 1355.0625pt x 941.01563pt>
 File: fig/Chart1.png Graphic file (type png)
 <use fig/Chart1.png>
 Package pdftex.def Info: fig/Chart1.png  used on input line 49.
@@ -776,55 +783,202 @@ Package pdftex.def Info: fig/Chart1.png  used on input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (15.88647pt too wide) in paragraph at lines 56--56
-[]\T1/futs/b/n/14.4 Homogenus anisotropic soil - Spa-tial cor-re-la-tion length
- 50 and 10, COV=0.3 
- []
-
-<fig/testRF2.png, id=365, 425.9112pt x 189.8292pt>
-File: fig/testRF2.png Graphic file (type png)
-<use fig/testRF2.png>
-Package pdftex.def Info: fig/testRF2.png  used on input line 59.
-(pdftex.def)             Requested size: 472.03123pt x 210.38557pt.
-[14
+[15
 
 
 
-]
+] [16 <./fig/testRF.png> <./fig/testp.png (PNG copy)>] [17 <./fig/Chart1.png>]
+<fig/ss/test20211118-125353.png, id=468, 426.1521pt x 189.8292pt>
+File: fig/ss/test20211118-125353.png Graphic file (type png)
+<use fig/ss/test20211118-125353.png>
+Package pdftex.def Info: fig/ss/test20211118-125353.png  used on input line 90.
+
+(pdftex.def)             Requested size: 224.21771pt x 99.87904pt.
+<fig/ss/testp20211118-125455.png, id=469, 1606.0pt x 1204.5pt>
+File: fig/ss/testp20211118-125455.png Graphic file (type png)
+<use fig/ss/testp20211118-125455.png>
+Package pdftex.def Info: fig/ss/testp20211118-125455.png  used on input line 98
+.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/ss/test20211118-125713.png, id=470, 425.9112pt x 189.8292pt>
+File: fig/ss/test20211118-125713.png Graphic file (type png)
+<use fig/ss/test20211118-125713.png>
+Package pdftex.def Info: fig/ss/test20211118-125713.png  used on input line 106
+.
+(pdftex.def)             Requested size: 224.21771pt x 99.93408pt.
+<fig/ss/testp20211118-125818.png, id=471, 1606.0pt x 1204.5pt>
+File: fig/ss/testp20211118-125818.png Graphic file (type png)
+<use fig/ss/testp20211118-125818.png>
+Package pdftex.def Info: fig/ss/testp20211118-125818.png  used on input line 11
+4.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/ss/test20211118-125941.png, id=472, 425.9112pt x 189.8292pt>
+File: fig/ss/test20211118-125941.png Graphic file (type png)
+<use fig/ss/test20211118-125941.png>
+Package pdftex.def Info: fig/ss/test20211118-125941.png  used on input line 121
+.
+(pdftex.def)             Requested size: 224.21771pt x 99.93408pt.
+<fig/ss/testp20211118-130042.png, id=473, 1606.0pt x 1204.5pt>
+File: fig/ss/testp20211118-130042.png Graphic file (type png)
+<use fig/ss/testp20211118-130042.png>
+Package pdftex.def Info: fig/ss/testp20211118-130042.png  used on input line 12
+9.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/pfailit20211116-090042.png, id=474, 394.3533pt x 277.9986pt>
+File: fig/pfailit20211116-090042.png Graphic file (type png)
+<use fig/pfailit20211116-090042.png>
+Package pdftex.def Info: fig/pfailit20211116-090042.png  used on input line 141
+.
+(pdftex.def)             Requested size: 472.03123pt x 332.76099pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/testp2.png, id=376, 1606.0pt x 1204.5pt>
-File: fig/testp2.png Graphic file (type png)
-<use fig/testp2.png>
-Package pdftex.def Info: fig/testp2.png  used on input line 65.
+[18
+
+] [19 <./fig/ss/test20211118-125353.png> <./fig/ss/testp20211118-125455.png (PN
+G copy)> <./fig/ss/test20211118-125713.png> <./fig/ss/testp20211118-125818.png 
+(PNG copy)> <./fig/ss/test20211118-125941.png> <./fig/ss/testp20211118-130042.p
+ng (PNG copy)>]
+Overfull \hbox (14.34273pt too wide) in paragraph at lines 146--146
+[]\T1/futs/b/n/14.4 Bearing Ca-pac-ity Prob-lem - Ho-mo-ge-neous isotropic soil
+ - CoV=0.0 - Known
+ []
+
+
+Overfull \hbox (1.19432pt too wide) in paragraph at lines 154--159
+\T1/futs/m/n/12 Plaxis undraind(C) be-haviour. 15-Node tri-an-gu-lar FEM el-e-m
+ents are used. A line load of 1000kPa
+ []
+
+[20 <./fig/pfailit20211116-090042.png>]
+<fig/bc/Chart2.png, id=501, 1355.0625pt x 941.01563pt>
+File: fig/bc/Chart2.png Graphic file (type png)
+<use fig/bc/Chart2.png>
+Package pdftex.def Info: fig/bc/Chart2.png  used on input line 190.
+(pdftex.def)             Requested size: 472.03123pt x 327.7953pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/bc/test20211116-100048.png, id=502, 425.9112pt x 189.8292pt>
+File: fig/bc/test20211116-100048.png Graphic file (type png)
+<use fig/bc/test20211116-100048.png>
+Package pdftex.def Info: fig/bc/test20211116-100048.png  used on input line 195
+.
+(pdftex.def)             Requested size: 472.03123pt x 210.38557pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/bc/testp20211116-100145.png, id=503, 1606.0pt x 1204.5pt>
+File: fig/bc/testp20211116-100145.png Graphic file (type png)
+<use fig/bc/testp20211116-100145.png>
+Package pdftex.def Info: fig/bc/testp20211116-100145.png  used on input line 20
+0.
 (pdftex.def)             Requested size: 472.03123pt x 354.0195pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [15 <./fig/testRF.png>] [16 <./fig/testp.png (PNG copy)>] [17 <./fig/Chart1.p
-ng> <./fig/testRF2.png>] [18 <./fig/testp2.png (PNG copy)>]
+<fig/bc/testutot20211116-100146.png, id=504, 1606.0pt x 1204.5pt>
+File: fig/bc/testutot20211116-100146.png Graphic file (type png)
+<use fig/bc/testutot20211116-100146.png>
+Package pdftex.def Info: fig/bc/testutot20211116-100146.png  used on input line
+ 205.
+(pdftex.def)             Requested size: 472.03123pt x 354.0195pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21] [22 <./fig/bc/Chart2.png> <./fig/bc/test20211116-100048.png>] [23 <./fig/b
+c/testp20211116-100145.png (PNG copy)>] [24 <./fig/bc/testutot20211116-100146.p
+ng (PNG copy)>]
+Overfull \hbox (5.45792pt too wide) in paragraph at lines 210--210
+[]\T1/futs/b/n/14.4 Bearing Ca-pac-ity Prob-lem - Ho-mo-ge-neous anisotropic so
+il - Scale of Fluc-
+ []
+
+
+Overfull \hbox (14.83217pt too wide) in paragraph at lines 211--233
+\T1/futs/m/n/12 The bear-ing ca-pac-ity prob-lem is re-peated with a ran-dom fi
+eld in-put rep-re-sent-ing the soil undrained
+ []
+
+<fig/bc/nx/bc_histogram20211117-091648.png, id=534, 384.7173pt x 277.9986pt>
+File: fig/bc/nx/bc_histogram20211117-091648.png Graphic file (type png)
+<use fig/bc/nx/bc_histogram20211117-091648.png>
+Package pdftex.def Info: fig/bc/nx/bc_histogram20211117-091648.png  used on inp
+ut line 239.
+(pdftex.def)             Requested size: 472.03123pt x 341.11754pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/bc/nx/testp20211116-101822.png, id=535, 1606.0pt x 1204.5pt>
+File: fig/bc/nx/testp20211116-101822.png Graphic file (type png)
+<use fig/bc/nx/testp20211116-101822.png>
+Package pdftex.def Info: fig/bc/nx/testp20211116-101822.png  used on input line
+ 249.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/bc/nx/testutot20211116-1018220.0972879216409623.png, id=536, 1606.0pt x 12
+04.5pt>
+File: fig/bc/nx/testutot20211116-1018220.0972879216409623.png Graphic file (typ
+e png)
+<use fig/bc/nx/testutot20211116-1018220.0972879216409623.png>
+Package pdftex.def Info: fig/bc/nx/testutot20211116-1018220.0972879216409623.pn
+g  used on input line 257.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/bc/nx/testp20211116-101338.png, id=537, 1606.0pt x 1204.5pt>
+File: fig/bc/nx/testp20211116-101338.png Graphic file (type png)
+<use fig/bc/nx/testp20211116-101338.png>
+Package pdftex.def Info: fig/bc/nx/testp20211116-101338.png  used on input line
+ 265.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/bc/nx/testutot20211116-1013380.0989476562699225.png, id=538, 1606.0pt x 12
+04.5pt>
+File: fig/bc/nx/testutot20211116-1013380.0989476562699225.png Graphic file (typ
+e png)
+<use fig/bc/nx/testutot20211116-1013380.0989476562699225.png>
+Package pdftex.def Info: fig/bc/nx/testutot20211116-1013380.0989476562699225.pn
+g  used on input line 273.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/bc/nx/testp20211116-100901.png, id=539, 1606.0pt x 1204.5pt>
+File: fig/bc/nx/testp20211116-100901.png Graphic file (type png)
+<use fig/bc/nx/testp20211116-100901.png>
+Package pdftex.def Info: fig/bc/nx/testp20211116-100901.png  used on input line
+ 280.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+<fig/bc/nx/testutot20211116-100901.png, id=540, 1606.0pt x 1204.5pt>
+File: fig/bc/nx/testutot20211116-100901.png Graphic file (type png)
+<use fig/bc/nx/testutot20211116-100901.png>
+Package pdftex.def Info: fig/bc/nx/testutot20211116-100901.png  used on input l
+ine 287.
+(pdftex.def)             Requested size: 224.21771pt x 168.15099pt.
+) [25
+
+] [26 <./fig/bc/nx/bc_histogram20211117-091648.png>] [27 <./fig/bc/nx/testp2021
+1116-101822.png (PNG copy)> <./fig/bc/nx/testutot20211116-1018220.0972879216409
+623.png (PNG copy)> <./fig/bc/nx/testp20211116-101338.png (PNG copy)> <./fig/bc
+/nx/testutot20211116-1013380.0989476562699225.png (PNG copy)> <./fig/bc/nx/test
+p20211116-100901.png (PNG copy)> <./fig/bc/nx/testutot20211116-100901.png (PNG 
+copy)>]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 5.
-[19
+[28
 
 
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-22.
+30.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)) [20]
+) [29])
+[30]
 \openout2 = `acronyms.aux'.
 
-
-(./acronyms.tex
+ (./acronyms.tex
 Appendix A.
-) [21
+) [31
 
 
 
@@ -833,35 +987,34 @@ Appendix A.
 
  (./appendix-b.tex
 Appendix B.
-) [22
+) [32
 
 
 
 ] (./project.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
- [23
+ [33
 
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
  (./project.aux (./00_front.aux) (./01_preface.aux)
-(./02_acknowledgment.aux) (./03_summary.aux) (./chapter01.aux) (./chapter02.aux
-) (./chapter03.aux) (./chapter04.aux) (./chapter0n.aux) (./acronyms.aux)
-(./appendix-b.aux))
+(./03_summary.aux) (./chapter01.aux) (./chapter02.aux) (./chapter03.aux)
+(./chapter04.aux) (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: 542DFCEF0A7EE86E28E2A801082FE480;1862.
+(rerunfilecheck)             Checksum: 3AE5E10104B2A0AE8AB34081259904E5;2222.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 10369 strings out of 483183
- 144676 string characters out of 5966292
- 674459 words of memory out of 5000000
- 24930 multiletter control sequences out of 15000+600000
+ 11829 strings out of 483183
+ 172947 string characters out of 5966292
+ 812296 words of memory out of 5000000
+ 26268 multiletter control sequences out of 15000+600000
  638699 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,10n,46p,686b,2042s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,50p,686b,2081s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/ole/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk
 >{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/ole/.texliv
 e2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk></usr/share/texlive/
@@ -873,10 +1026,10 @@ s/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type
 ia/putbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on project.pdf (28 pages, 617899 bytes).
+Output written on project.pdf (37 pages, 2348126 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 136 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 

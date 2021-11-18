@@ -2,24 +2,45 @@
 %%=========================================
 \chapter[Summary]{Summary and Recommendations for Further Work}
 
-In this final chapter you should sum up what you have done and which results you have got. You should also discuss your findings, and give recommendations for further work.
+In this final chapter presents a summary of the results, a discussion of the findings and recommendations for further work.
 
 %%=========================================
 \section{Summary and Conclusions}
+In this project a method is implemented in Plaxis 2D using python API interface to run Random Finite Element Monte Carlo simulations on geotechnical problems with spatially variable soil models.
+The method is verified by controlling input parameters, fixing them to constrains giving known analytical solutions. 
+The versatility of the implementation is demonstrated by verification on a slope stability and a bearing capacity problem. 
+
+
 Here, you present a brief summary of your work and list the main results you have got. You should give comments to each of the objectives in Chapter 1 and state whether or not you have met the objective. If you have not met the objective, you should explain why (e.g., data not available, too difficult).
 
-This section is similar to the Summary and Conclusions in the beginning of your report, but more detailed---referring to the the various sections in the report.
+This section is similar to the Summary and Conclusions in the beginning of your report, but more detailed---referring to the various sections in the report.
 
 %%=========================================
 \section{Discussion}
 Here, you may discuss your findings, their strengths and limitations.
+
+The major limitation of the implementation in its current form is its execution time per realization. The python implementation of the Spectral Reference Method for generating random fields is much slower than the Matlab implementation it was adapted from. The differences of the inner workings of Matlab and python is beyond the scope of this project, but it is suggested in further work to improve this. The processing speed improvement is needed for Monte Carlo simulations of rear events which demands many simulations to gather the statistics needed for describing small probabilities with confidence. 
+
 %%=========================================
 \section{Recommendations for Further Work}
-You should give recommendations to possible extensions to your work. The recommendations should be as specific as possible, preferably with an objective and an indication of a possible approach.
+Recommendation for further work is given below. The focus of the list below is in improvement of the method implemented in this project work. Though the application of the method may be the most interesting\ldots
 
-The recommendations may be classified as:
+The recommendations are classified by time as:
 \begin{itemize}
-\item Short-term
-\item Medium-term
-\item Long-term
+\item Short-term further work
+	\begin{itemize}
+	\item{Stress testing by extending problem size, smaller earth elements and denser mesh. What is the limit of the program? And what size of problems can practically be analyzed?}
+	\item{Performance optimization. The Matlab implementation of the SRM runs many orders of magnitude faster than the python implementation. It should be possible to narrow this gap, making the implementation much more efficient, allowing many more iterations of RFEM to be run in the same time}
+	\end{itemize}
+\item Medium-term further work
+
+	\begin{itemize}
+        \item{More advanced soil models with more random input parameters and correlated random fields. Is it possible to simulate strength softening or sensitivity?}
+        \item{More geometries and geotechnical problems like earth pressure problems. The implementation proposed can easily be extended with user input like excavation stages in a staged construction. Also possible to add and study forces on anchors, plates, sheet piles etc.}
+        \end{itemize}
+\item Long-term further work
+
+	\begin{itemize}
+	\item{Performance optimization, parallelization. RFEM is a highly parallel process that can benefit by computing realizations in parallel for big performance gains and lower execution time. It is not believed to be straight forward to implement this, but maybe multiple instances of Plaxis can be started and run on different compute nodes. }
+	\end{itemize}
 \end{itemize}

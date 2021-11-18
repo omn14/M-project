@@ -5,56 +5,49 @@ The first chapter of a well-structured thesis is always an introduction, setting
 
 %%=========================================
 \section{Background}
-Soil is a complex medium.
-Its inhomogenous nature means that the physical parameters of soil vary spatialy both vertically and lateraly.
-Traditionally soil properties is modeled with a representative value, usually some kind of mean value or simmilar.
+The inhomogeneous nature of soil means that the physical parameters vary spatially both vertically and laterally.
+Traditionally soil properties is modeled with a representative value, usually some kind of mean value or similar.
+Common cause of deviation of expected performance of geotechnical design is variability in soil properties at the site.
 In probabilistic methods, this variability, or uncertainty is taken into account by treating the soil as a random variable sampled from a probability distribution.
 By using random field theory and statistics one can try to describe how the soil parameters are distributed in space and how they vary with distance.
-In a slope stability problem, the spatial distribution of the soil strength governing parameters has a direct impact on the development of the failure surface, the falure mechanism and therfore the over all stability of the slope.
+In a slope stability or a bearing capacity problem, the spatial distribution of the soil strength governing parameters has a direct impact on the development of the failure surface, the failure mechanism and therefore the over all stability.
 To simulate stability a finite element program can be used with the soil model parameters input to the finite element mesh based on statistical spatial correlated random fields.
 To simulate variability and uncertainty, the modeling is repeated many times with different random fields.
-This is the random finite element method.\\
-\\
-\\
-In this section, you should present the problem that you are going to investigate or analyze; why this problem is of interest; what has, so far, been done to solve the problem, and which parts of the problem that remain.
+This is the random finite element method.
 %%=========================================
 \subsection*{Problem Formulation}
-Current modern soil modeling software do not support random finite element method, and published reasearch random finite element software code do not have the advanced functionality as modern comercial geotechnical software.
-How ever, since the random finite element method does not change the way the problem is simulated, only the input parameters change, modern software packages can be used if a way to specify the input and the simulation run parameters can be controlled in an efficient manner.
-Plaxis, a modern software package devolped by Bently, has capabilities like this through its application program interface and python scripting. 
-It is of great interest to research on spatialy varying soil modeling to utelize the anvanced functions and ease of access of existing software. Gaining this ability will expand the compexity of the problems alowed to be simulated by the RFEM method.
+Current modern soil modeling software do not support random finite element method, and published research random finite element software code do not have the advanced functionality as modern commercial geotechnical software.
+How ever, since the random finite element method does not change the way the problem is simulated, only the input parameters change, modern software packages can be used if a way to specify the input and the simulation run parameters can be controlled in an automatic and efficient manner.
+Plaxis, a modern software package developed by Bently, or Optum G2, by has capabilities like this through its application program interface and python scripting. 
+It is of great interest to research on spatially varying soil modeling to utilize the advanced functions and ease of access of existing software. Gaining this ability will expand the complexity of the problems allowed to be simulated by the RFEM method. The current userbase of geotechnical engineers using Plaxis is large and providing a RFEM tool in plaxis could allow for them to incorporate probabilistic methods in their designs.
 
-Common causes of discrepancy between the estimated and  actual performance of any geotechnical system may be summarized as ~Cambou 1975; Lee et al. 1983; Mostyn and Li 1993;  Phoon and Kulhawy 1999!  1. Variability of the soil properties at a specific site;
-
-
-You should define your problem in a clear an unambiguous way and explain why this is a problem, why it is of interest---and to whom. It is also important to delimit the problem area.
 %%=========================================
 \subsection*{Literature Survey}
-The random finite element method (RFEM) has been in use since the mid-1990s \citep*[e.g, see][]{griffiths1993seepage}. RFEM combines random field theory to represent the spatialy varying soil with finite element method (FEM) for deformation analysis. Stochastic analysis in FEM methods can be built into the finite element equations themselvs \citep*[e.g., see][]{vanmarcke1983stochastic}, 
-or a Monte Carlo approach can be used were multiple realizations of different spatial soil models can be analyzed together. The Monte Carlo approach can be computationaly demanding, but is very flexible by utilizing arbitrary FEM code changing just the input. The Monte Carlo RFEM and its application to many geotechnical problems including seepage, bearing capacity, earth pressure and settlement is described in more detail in book by \citet*{fenton2008risk}.
+The random finite element method (RFEM) has been in use since the mid-1990s \citep*[e.g, see][]{griffiths1993seepage}. RFEM combines random field theory to represent the spatially varying soil with finite element method (FEM) for deformation analysis. Stochastic analysis in FEM methods can be built into the finite element equations themselves \citep*[e.g., see][]{vanmarcke1983stochastic}, 
+or a Monte Carlo approach can be used were multiple realizations of different spatial soil models can be analyzed together. 
+The Monte Carlo approach can be computationally demanding, but can be very flexible by utilizing arbitrary FEM code changing just the input. 
+The Monte Carlo RFEM and its application to many geotechnical problems including seepage, bearing capacity, earth pressure and settlement is described in more detail in book by \citet*{fenton2008risk}.
 Example of RFEM analysis for slope stability is presented by \citep*[see][Chapter 13]{fenton2008risk} based on FEM code developed by \citet*{smith2013programming}. The RFEM code is publicly available and extensive research has been conducted using it. A list of all but the most recent publications using the code is available here: (\url{http://random.engmath.dal.ca/rfem/rfem_pubs.html}). 
 The RFEM code is for two-dimensional plane strain analysis of elastic perfectly plastic soils with a Mohr Coulomb failure criterion. For a detailed discussion of the method \citep*[e.g, see][]{griffiths1999slope}.
-The limitation of the failure criteria and the soil model can restrict the application of the method to more complex soils who displays different characteristics. Software with a range of failure criteria and soil models exist, such as Plaxis by Bently \citep{brinkgreve2010plaxis}. Plaxis do not have random field functionality. 
-
-Optum G2, (Krabbenhøft and Lyamin,  2014) 
+The limitation of the failure criteria and the soil model can restrict the application of the method to more complex soils who displays different characteristics. Software with a range of failure criteria and soil models exist, such as Plaxis by Bently \citep{brinkgreve2010plaxis} or Optum G2 \citep{krabbenhoft2016optum}. 
+Plaxis do not have built in random field functionality. 
 
 
 %%=========================================
 \subsection*{What Remains to be Done?}
-To be abel to describe more complex geotechnical problems, a method to unify material models and numerical methods is needed. Implimentation of new soil models into FEM code is not straight forward. 
-Plaxis alows for python scripting through an application programing interface (API). 
+To be able to describe more complex geotechnical problems, a method to unify material models and numerical methods is needed. Implementation of new soil models into FEM code is not straight forward. 
+Plaxis allows for python scripting through an application programming interface (API). 
 The RFEM Monte Carlo method could be implemented in Plaxis by scripting random field input and automating simulation.
 
 
-After you have defined and delimited your problem -- and presented the relevant results found in the literature within this field, you should sum up which parts of the problem that remain to be solved.
 %%=========================================
 \section{Objectives}
 The main objectives of this project are
 \begin{enumerate}
 \item Implement The RFEM Monte Carlo method in Plaxis using python API interface
 \item Demonstrate and verify the implementation on a simple slope stability problem
-\item Reproduce literature results?
-\item Comparison to analytical results
+\item Demonstrate versatility by extending the implementation to a simple bearing capacity problem
+\item Compare results to analytical results were available
 \end{enumerate}
 
 
@@ -62,16 +55,20 @@ The main objectives of this project are
 \section{Limitations}
 The field of random behavior of soils in geotechnical problems is extensive and this project work scope only scratches in the surface. The methodology of finite element numerical computations and random fields is only described briefly and beyond the scope of this project course to go into in any detail.\\
 
-The python code presented is not attempted optimized in any way, the focus is on proof of concept. The result presented is a tool, further research and application will prove its usability.
+The python code presented is not attempted optimized in any way, the focus is on proof of concept. The result presented is a tool, further work, research and application will prove its usability.
 
 %%=========================================
 \section{Approach}
-A literature search was conducted to get an overview of the current implementations of the RFEM code. Source code and acompanying documentation was also studied where available. The main part of the project was to code the implementation of the RFEM method into the Plaxis 2D software using the python scripting API. Study of the Plaxis 2D software manual and online documentation was key to get familiar with Plaxis and the API functions to controll and automate the program execution from the python code. Example problems from literature is used to verify the validity of the implementation. Results from other software is reproduced to compare results.
+A literature search was conducted to get an overview of the current implementations of the RFEM code. Source code and accompanying documentation was also studied where available. The main part of the project was to code the implementation of the RFEM method into the Plaxis 2D software using the python scripting API. Study of the Plaxis 2D software manual and online documentation was key to get familiar with Plaxis and the API functions to control and automate the program execution from the python code. Example problems from literature is used to verify the validity of the implementation. Results from other software is reproduced to compare results.
 Analytical results is compared to the implementation.
+To demonstrate versatility a slope stability and bearing capacity problem is used.
 
 
 
 %%=========================================
 \section{Structure of the Report}
-The rest of the report is structured as follows. Chapter 2 gives an brief introduction to random field theory, finite element analysis and application to slope stability problems. In chapter 3 the implementation of the RFEM method in Plaxis using python API script is discussed. Chapter 4 compares results of simulations using the python API implementation of the RFEM method in Plaxis. Chapter 5 gives a summary and discussion of the results and main findings of the project work.
+The rest of the report is structured as follows. Chapter 2 gives an brief introduction to random field theory and finite element analysis. 
+In chapter 3 the implementation of the RFEM method in Plaxis using python API script is discussed. 
+Chapter 4 compares results of simulations using the python API implementation of the RFEM method in Plaxis. 
+Chapter 5 gives a summary and discussion of the results and main findings of the project work.
 

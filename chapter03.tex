@@ -1,94 +1,67 @@
 %This is chapter 3
 %%=========================================
 \chapter[RFEM implementation in Plaxis 2D using python API]{RFEM implementation in Plaxis 2D using python API}
-The content of this chapter will vary with the topic of your thesis. 
-
+This chapter discusses the implementation of the RFEM method in Plaxis using python API scripting.
 
 \section{SRM implementation}
 
 In generating the random soil strength field an implementation of the SRM method written in MATLAB code by Yutao Pan out of \citet*{deodatis1990stochastic} is converted to python code.
+The implementation in this project uses a Gaussian spectral density function given below in equation \ref{eq3.39}. Other spectral density functions exists and can be implemented.
+\begin{equation}
+\label{eq3.93}
+	S_{f_0 f_0}(\kappa_{1_{n_1}},\kappa_{2_{n_2}}) = \frac{1}{4}\frac{\theta_x}{\pi}\frac{\theta_y}{\pi}e^{(-(\frac{\theta_x^2 \kappa_1^2}{4\pi})}e^{(-(\frac{\theta_y^2 \kappa_2^2}{4\pi})}
+\end{equation}
 
-\begin{lstlisting}[language=Python, caption=Python example]
-import numpy as np
-
-def incmatrix(genl1,genl2):
-    m = len(genl1)
-    n = len(genl2)
-    M = None #to become the incidence matrix
-    VT = np.zeros((n*m,1), int)  #dummy variable
-
-    #compute the bitwise xor matrix
-    M1 = bitxormatrix(genl1)
-    M2 = np.triu(bitxormatrix(genl2),1)
-
-    for i in range(m-1):
-        for j in range(i+1, m):
-            [r,c] = np.where(M2 == M1[i,j])
-            for k in range(len(r)):
-                VT[(i)*n + r[k]] = 1;
-                VT[(i)*n + c[k]] = 1;
-                VT[(j)*n + r[k]] = 1;
-                VT[(j)*n + c[k]] = 1;
-
-                if M is None:
-                    M = np.copy(VT)
-                else:
-                    M = np.concatenate((M, VT), 1)
-
-                VT = np.zeros((n*m,1), int)
-
-    return M
-\end{lstlisting}
+\lstinputlisting[language=Python, caption=SRM code]{SRM.py}
 
 \section{Local averaging}
 
-When i. e. a clay sample is sheard in the laboratory to detrmine strength parameters, failure develops over the whole sample when the bonds of the sample yield. The measured strength is a function of the average bond strength of the sample. The greater the sample size the stronger is the averaging effect.
+When e.g. a clay sample is sheared in the laboratory to determine strength parameters, failure develops over the whole sample when the bonds of the sample yield. The measured strength is a function of the average bond strength of the sample. The greater the sample size the stronger is the averaging effect.
 Input parameters in modeling, in the case of RFEM, the mean, standard deviation and spatial correlation length are assumed to be point measures. 
-Therefore when populating a RFEM model spatial averaging needs to be taken into account since the element sizes is in general much grater than the size of the sample from wich the parameter was derived.
-It can be shown \citep*{vanmarcke2010random} that the the reduction in variance due to local averaging is given by:
+Therefore when populating a RFEM model spatial averaging needs to be taken into account since the element sizes is in general much grater than the size of the sample from where the parameter was derived.
+It can be shown \citep*{vanmarcke2010random} that the reduction in variance due to local averaging is given by:
 \begin{equation}
 \label{eq3.39}
 	\sigma_A = \sigma \sqrt{\gamma} 
 \end{equation}
 
-where $\sigma_A$ is the new spatially averaged variance wich is to be used when drawing samples from the distribution to put into the finite element mesh and $\gamma$ is the variance reduction function, defined for a rectangular element as:
+where $\sigma_A$ is the new spatially averaged variance that is to be used when drawing samples from the distribution to put into the finite element mesh and $\gamma$ is the variance reduction function, defined for a rectangular element as:
 
 \begin{equation}
 \label{eq3.42}
 	\gamma = \frac{4}{T_x^2 T_y^2} \int_0^{T_x} \int_0^{T_y} (T_x-\tau_x)(T_y-\tau_y)\rho(\tau_x,\tau_y)d\tau_xd\tau_y
 \end{equation}
 
-where $T_x$ and $T_y$ is the size of the element in the $x$ and $y$ direction respectivly, $\rho$ is the correlation function and $\tau_x$ and $\tau_y$ is the difference between the respectivly the $x$ and $y$ coordinates of any two points in the random field.
+where $T_x$ and $T_y$ is the size of the element in the $x$ and $y$ direction respectively, $\rho$ is the correlation function and $\tau_x$ and $\tau_y$ is the difference between the, respectively, the $x$ and $y$ coordinates of any two points in the random field.
 
-$\gamma$ has the value of $1.0$ when $T=0$ \citep[see][chapter 3]{fenton2008risk}. Setting \(T=\alpha \theta\) (i.e some scalar $\alpha$ times the scale of fluctuation $\theta$) leads to the conclution that elements much smaller than the scale of fluctuation is affected to small degree by variance reduction.
+$\gamma$ has the value of $1.0$ when $T=0$ \citep[see][chapter 3]{fenton2008risk}. Setting \(T=\alpha \theta\) (i.e some scalar $\alpha$ times the scale of fluctuation $\theta$) leads to the conclusion that elements much smaller than the scale of fluctuation is affected to small degree by variance reduction.
 
-In this project work this realization is used, but to what degree is left to be discussed.
+In this project work this realization is used.
 
 \section{Monte Carlo}
 
-Monte Carlo is a method that can estimate the means, varances and probabilities of the responses of complex systems to random input \citep[see][chapter 6.6]{fenton2008risk}. 
-Consider the random response of a system $g(X_1,X_2)$ where $X_1$ and $X_2$ are random variables. The system fails if the the value of $g(X_1,X_2) > g_{critical}$. Monte Carlo simulates a sequence of realizations of $X_1$ and $X_2$,  evaluates $g(X_1,X_2)$ and checks if $g(X_1,X_2) > g_{critical}$. 
+Monte Carlo is a method that can estimate the means, variances and probabilities of the responses of complex systems to random input \citep[see][chapter 6.6]{fenton2008risk}. 
+Consider the random response of a system $g(X_1,X_2)$ where $X_1$ and $X_2$ are random variables. The system fails if the value of $g(X_1,X_2) > g_{critical}$. Monte Carlo simulates a sequence of realizations of $X_1$ and $X_2$,  evaluates $g(X_1,X_2)$ and checks if $g(X_1,X_2) > g_{critical}$. 
 
-The method is very versitile and can be applied to most kinds of systems. 
+The method is very versatile and can be applied to most kinds of systems. 
 Drawbacks is that there are no analytical solution, if the system, e.g. the input is changed, the simulation must be rerun, we can not predict the response to a change in input. 
-Also, to simulate rear events, alot of simulations is needed wich can be computational demanding.
+Also, to simulate rear events, a lot of simulations is needed which can be computational demanding.
 
 \section{Plaxis 2D}
 
 The following procedure to run the RFEM Monte Carlo analysis is implemented in Plaxis using the python API.
-The user specify the input soil parameters, the problem geometry and the desired number of realizations. One realization is one stability simulation on one random field. The procedure is run fully autonomus without user interaction.
+The user specify the input soil parameters, the problem geometry and the desired number of realizations. One realization is one stability simulation on one random field. The procedure is run fully autonomous without user interaction.
 
 \begin{enumerate}
 	\item{The script start by creating a new empty Plaxis project}
 	\item{Next, the problem geometry is generated i.e. the slope height, inclination and extent.}
-	\item{The random field representing the soil property is generated based on the user specified mean, standart deviation (or CoV) and scale of fluctuation}
+	\item{The random field representing the soil property is generated based on the user specified mean, standard deviation (or CoV) and scale of fluctuation}
 		
 	\item{The soil elements are populated with the soil parameter values from the random field.}
 	\item{Then Plaxis grids the geometry generating the FEM mesh}
-	\item{Next a new phase is added after the initaial phase, activating the geometry represented by the soil}
-	\item{Finaly the deformations are calculated and a result is stored, i.e. failure or no filure in a slope stability problem}
+	\item{Next a new phase is added after the initial phase, activating the geometry represented by the soil}
+	\item{Finally the deformations are calculated and a result is stored, i.e. failure or no failure in a slope stability problem}
 	\item{Now step 3 to 7 is repeated generating a new realization of the random field, a user specified number of times}
 	\item{In the end statistics are gathered and written to a file, and plots of the results can be displayed}
 
 \end{enumerate}
-
